@@ -1,0 +1,19 @@
+using System;
+namespace Program {
+    class Program {
+        static void Main(string[] args) {
+            string nome1, nome2;
+			int  idade1, idade2, idadeM;
+			Console.Write("Digite o nome da primeira pessoa: ");
+			nome1 = Console.ReadLine();
+			Console.Write("Digite o nome da segunda pessoa: ");
+			nome2 = Console.ReadLine();
+			Console.Write("Digite a idade de "+nome1+": ");
+			idade1 = int.Parse(Console.ReadLine());
+			Console.Write("Digite a idade de "+nome2+": ");
+			idade2 = int.Parse(Console.ReadLine());
+			idadeM = (idade1 + idade2)/ 2;
+			Console.Write("Os nomes das pessoas sao "+nome1+" e "+nome2+". A idade media entre elas e "+idadeM.ToString("F1")+".");
+			}
+    }
+}
