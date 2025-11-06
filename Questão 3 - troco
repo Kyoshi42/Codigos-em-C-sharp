@@ -1,0 +1,17 @@
+using System;
+namespace Program {
+    class Program {
+        static void Main(string[] args) {
+            double preco_unitario, dinheiro, troco;
+			int  quantidade;
+			Console.Write("Preco do produto? ");
+			preco_unitario = double.Parse(Console.ReadLine());
+			Console.Write("Quantidade de unidades: ");
+			quantidade = int.Parse(Console.ReadLine());
+			Console.Write("Dinheiro dado para o pagamento:");
+			dinheiro = double.Parse(Console.ReadLine());
+			troco = dinheiro - (preco_unitario * quantidade);
+			Console.Write("O troco a ser dado ao cliente e de R$"+troco.ToString("F2")+".");
+			}
+    }
+}
